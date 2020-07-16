@@ -5,6 +5,7 @@ const OrderItem = (props) => (
     <div className="App-orders-item">
         <a href="#">
             <img src={props.src_img} className="App-orders-item-img" alt="logo"/>
+            {/*<img src={require('../images/' + props.src_img + '.png')} className="App-orders-item-img" alt="logo"/>*/}
         </a>
 
         <div>

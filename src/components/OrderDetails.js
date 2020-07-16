@@ -1,21 +1,15 @@
 import React from 'react';
 import crocs from "../images/crocs.png";
-import cargos from "../images/cargos.png";
 import OrderItem from "./OrderItem";
-
-const location = {
-    address: 'Myntra Designs Pvt. Ltd., Damodar Tech Park, Bengaluru, Karnataka',
-    lat: 12.8923336,
-    lng: 77.6394374,
-};
-
+import rawDataJson from "../data/data.json"
 
 const OrderDetails = () => (
     <div className="App-orders-items">
-
-        <OrderItem uidx={11} src_img={crocs} location={location}/>
-        <OrderItem uidx={22} src_img={cargos} location={location}/>
-
+        {
+            rawDataJson.orders.map((data) => {
+                return <OrderItem uidx={data.uidx} src_img={crocs} location={data.location}/>
+            })
+        }
     </div>
 );
 
