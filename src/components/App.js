@@ -28,7 +28,7 @@ function App() {
                             <img src={crocs} className="App-orders-item-img" alt="logo"/>
                         </a>
                     </div>
-                    <Map location={location} zoomLevel="15"/>
+                    <Map location={location} zoomLevel={15}/>
                 </div>
                 <div className="App-orders-item">
                     <div>
@@ -36,7 +36,7 @@ function App() {
                             <img src={cargos} className="App-orders-item-img" alt="logo"/>
                         </a>
                     </div>
-                    <Map location={location} zoomLevel="15"/>
+                    <Map location={location} zoomLevel={14}/>
                 </div>
             </div>
 
