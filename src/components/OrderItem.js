@@ -7,8 +7,11 @@ const OrderItem = (props) => (
             <a href="#">
                 <img src={props.src_img} className="App-orders-item-img" alt="logo"/>
             </a>
+            <a href={`#` + props.uidx} data-toggle="collapse">location</a>
         </div>
-        <Map location={props.location} zoomLevel={15}/>
+        <div id={props.uidx} className="collapse">
+            <Map location={props.location} zoomLevel={15}/>
+        </div>
     </div>
 );
 

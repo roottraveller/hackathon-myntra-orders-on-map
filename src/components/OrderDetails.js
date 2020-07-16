@@ -13,8 +13,8 @@ const location = {
 const OrderDetails = () => (
     <div className="App-orders-items">
 
-        <OrderItem src_img={crocs} location={location}/>
-        <OrderItem src_img={cargos} location={location}/>
+        <OrderItem uidx={11} src_img={crocs} location={location}/>
+        <OrderItem uidx={22} src_img={cargos} location={location}/>
 
     </div>
 );
