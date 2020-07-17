@@ -2,7 +2,7 @@
   "orders": [
     {
       "uidx": "8c915dea-c740-11ea-87d0-0242ac130003",
-      "orderInfo": "../images/earphones.jpeg",
+      "orderInfo": "require('../images/earphones.jpeg')",
       "location": {
         "address": "EKart Pvt. Ltd. Hsr Layout, Bengaluru, Karnataka",
         "lat": 12.9192395,
